@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Script is taken from http://www.axllent.org/docs/view/ssh-geoip/
+
 # UPPERCASE space-separated country codes to ACCEPT
 ALLOW_COUNTRIES="DE PL"
 
