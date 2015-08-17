@@ -12,7 +12,7 @@ geoblocker.sh {some ip}
 
 Add the following line to `/etc/hosts.allow`:
 ```
-ALL: ALL: aclexcec /root/geoblocker/geoblocker.sh %a
+ALL: ALL: aclexec /root/geoblocker/geoblocker.sh %a
 ```
 
 Then add to `/etc/hosts.deny`:
