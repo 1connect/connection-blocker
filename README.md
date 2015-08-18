@@ -8,15 +8,18 @@ Script to limit SSH and other types of connections to specified countries.
 geoblocker.py {service name} {ip}
 ```
 
+When country is valid, script returns exit status **0**, otherwise **1**.
+
 ## Installation
 
-Add the following line to `/etc/hosts.allow`:
+* Install packages: `geoip-bin`, `geoip-database`, `python-geoip`.
+* Clone project repository into `/scripts/geoblocker`.
+* Add the following line to `/etc/hosts.allow`:
 ```
-ALL: ALL: aclexec /root/geoblocker/geoblocker.sh %d %a
+ALL: ALL: aclexec /scripts/geoblocker/geoblocker.py %d %a
 ```
 
-Then add to `/etc/hosts.deny`:
+* Then add to `/etc/hosts.deny`:
 ```
 ALL: ALL
 ```
-
