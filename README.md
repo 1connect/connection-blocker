@@ -1,11 +1,11 @@
-# Geoblocker
+# connection-blocker
 
 Script to limit SSH and other types of connections to specified countries.
 
 ## Usage
 
 ```
-geoblocker.py {service name} {ip}
+blocker.py {service name} {ip}
 ```
 
 When country is valid, script returns exit status **0**, otherwise **1**.
